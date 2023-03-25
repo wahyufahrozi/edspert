@@ -1,11 +1,15 @@
 import React from "react";
 import Cards from "../../components/cards";
+import Hero from "../../components/hero";
 
 const ProductCatalog = () => {
   return (
-    <div className="px-11 min-h-screen " style={{ marginBottom: "100px" }}>
-      <Cards />
-    </div>
+    <>
+      <Hero />
+      <div className="px-11 min-h-screen mb-10">
+        <Cards />
+      </div>
+    </>
   );
 };
 
