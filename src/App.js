@@ -1,14 +1,16 @@
 import Header from "./components/header";
-import ProductCatalog from "./pages/ProductCatalog";
+// import ProductCatalog from "./pages/ProductCatalog";
 import Footer from "./components/footer";
-import ProductDetail from "./pages/ProductDetail";
+import PaymentCheckout from "./pages/PaymentCheckout";
+// import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
     <div style={{ backgroundColor: "#EFF4FA" }}>
       <Header />
       {/* <ProductCatalog /> */}
-      <ProductDetail />
+      {/* <ProductDetail /> */}
+      <PaymentCheckout />
       <Footer />
     </div>
   );
