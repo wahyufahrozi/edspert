@@ -29,11 +29,9 @@ const SideSummary = ({ data }) => {
       ))}
       <div className="flex justify-center items-center">
         <button
-          className="w-9/12 rounded-full"
+          className="w-9/12 rounded-full secondary text-white "
           style={{
             padding: "10px 24px",
-            backgroundColor: "#FFCD29",
-            color: "white",
           }}
         >
           Daftar Kelas

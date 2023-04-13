@@ -9,3 +9,12 @@
 button.primary {
   background-color: #ff6161;
 }
+
+button.secondary {
+  background-color: rgb(255, 205, 41);
+}
+
+ol li {
+  list-style: decimal;
+  list-style-position: inside;
+}
