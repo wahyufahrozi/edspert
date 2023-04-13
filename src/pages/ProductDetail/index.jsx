@@ -13,7 +13,13 @@ const ProductDetail = () => {
         dataDetailSummary={dataDetailSummary}
         dataFasilitas={dataFasilitas}
       />
-      <Banner text={"Sudah siap bergabung ?"} />
+      <Banner
+        text="Sudah siap bergabung ?"
+        variant={
+          "flex flex-col justify-center items-center text-white gap-y-10"
+        }
+        textButton="Daftar kelas"
+      />
     </>
   );
 };

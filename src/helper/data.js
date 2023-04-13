@@ -71,3 +71,39 @@ export const dataFasilitas = [
   "Job Connector",
   "Carrer Development",
 ];
+
+export const dataPaymentInstructionATM = [
+  "Masukkan kartu ke mesin ATM Mandiri.",
+  "Pilih Bahasa.",
+  "Masukkan PIN ATM.",
+  "Pilih menu transaksi lainnya.",
+  "Pilih menu “Transfer”, lalu pilih ke relk Mandiri.",
+  "Masukkan no rekening yang dituju.",
+  "Masukkan nominal jumlah uang yang akan di transfer.",
+  "Layar ATM akan menampilkan data transaksi anda, jika data sudah benar pilih “YA”.",
+  "Selesai, struk akan keluar dari mesin ATM.",
+];
+
+export const dataPaymentInstructionInternet = [
+  "Masukkan kartu ke  Internet Banking Mandiri.",
+  "Pilih Bahasa.",
+  "Masukkan PIN Internet Banking.",
+  "Pilih menu transaksi lainnya.",
+  "Pilih menu “Transfer”, lalu pilih ke rek Mandiri.",
+  "Masukkan no rekening yang dituju.",
+  "Masukkan nominal jumlah uang yang akan di transfer.",
+  "Layar Internet Banking akan menampilkan data transaksi anda, jika data sudah benar pilih “YA”.",
+  "Selesai",
+];
+
+export const dataPaymentInstructionMbanking = [
+  "Masukkan kartu ke  M-Banking Mandiri.",
+  "Pilih Bahasa.",
+  "Masukkan PIN M-Banking.",
+  "Pilih menu transaksi lainnya.",
+  "Pilih menu “Transfer”, lalu pilih ke rek Mandiri.",
+  "Masukkan no rekening yang dituju.",
+  "Masukkan nominal jumlah uang yang akan di transfer.",
+  "Layar M-Banking akan menampilkan data transaksi anda, jika data sudah benar pilih “YA”.",
+  "Selesai",
+];

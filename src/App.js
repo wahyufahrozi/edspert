@@ -1,8 +1,10 @@
 import Header from "./components/header";
 // import ProductCatalog from "./pages/ProductCatalog";
 import Footer from "./components/footer";
-import PaymentCheckout from "./pages/PaymentCheckout";
 // import ProductDetail from "./pages/ProductDetail";
+import PaymentInstructions from "./pages/PaymentInstructions";
+
+// import PaymentCheckout from "./pages/PaymentCheckout";
 
 function App() {
   return (
@@ -10,7 +12,8 @@ function App() {
       <Header />
       {/* <ProductCatalog /> */}
       {/* <ProductDetail /> */}
-      <PaymentCheckout />
+      {/* <PaymentCheckout /> */}
+      <PaymentInstructions />
       <Footer />
     </div>
   );

@@ -1,9 +1,9 @@
 import React from "react";
 
-const Banner = ({ text }) => {
+const Banner = ({ text, variant, textButton }) => {
   return (
     <div
-      className="flex flex-col justify-center items-center text-white gap-y-10 "
+      className={variant}
       style={{ height: "386px", backgroundColor: "#2B3E58" }}
     >
       <h1 className="text-3xl">{text}</h1>
@@ -16,7 +16,7 @@ const Banner = ({ text }) => {
           width: "262px",
         }}
       >
-        Daftar Kelas
+        {textButton}
       </button>
     </div>
   );
