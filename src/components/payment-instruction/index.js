@@ -3,9 +3,11 @@ import people from "../../assets/people.png";
 import { data } from "../../helper/data";
 import logomandiri from "../../assets/mandiri-logo.png";
 
+import { useSelector } from "react-redux";
 import iconCopy from "../../assets/Group 1353.png";
 import Tabs from "../tabs";
 const PaymentInstruction = () => {
+  const { entities } = useSelector((state) => state.cart);
   return (
     <div className="bg-white rounded-2xl p-10">
       <div className="grid grid-cols-[50%,40%]">
@@ -54,7 +56,7 @@ const PaymentInstruction = () => {
             <div className="flex flex-col">
               <div className="flex gap-3 items-center">
                 <h1>No Rek. 137000299089</h1>
-                <div className="flex items-center gap-2">
+                <div className="flex items-center gap-2 cursor-pointer">
                   <img
                     src={iconCopy}
                     style={{ width: "10px", height: "13px" }}
@@ -71,7 +73,9 @@ const PaymentInstruction = () => {
           <h1 className="text-lg" style={{ color: "#6D7175" }}>
             Nominal yang harus dibayar senilai:
           </h1>
-          <h1 className="text-xl">Rp. 400.000</h1>
+          {entities.map((item) => (
+            <h1 className="text-xl">Rp. {item.price}</h1>
+          ))}
         </div>
         <div>
           <h1 className="text-xl font-bold mb-10">Instruksi Pembayaran</h1>

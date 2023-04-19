@@ -4,13 +4,14 @@ import {
   dataPaymentInstructionInternet,
   dataPaymentInstructionMbanking,
 } from "../../helper/data";
+import "./tabs.css";
 const Tabs = () => {
   const [openTab, setOpenTab] = useState(1);
   return (
     <>
       <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
         <ul
-          class="flex flex-wrap -mb-px text-sm font-medium text-center"
+          class="flex flex-wrap -mb-px text-sm font-medium text-center "
           id="myTab"
           data-tabs-toggle="#myTabContent"
           role="tablist"
@@ -57,7 +58,7 @@ const Tabs = () => {
         </ul>
       </div>
       <div>
-        <div class=" rounded-lg ">
+        <div class=" rounded-lg instruction">
           <div className={openTab === 1 ? "block" : "hidden"}>
             <ol>
               {dataPaymentInstructionATM.map((item) => {
